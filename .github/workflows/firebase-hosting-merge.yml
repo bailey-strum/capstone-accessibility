@@ -11,11 +11,12 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      - name: Checkout Repo
+        uses: actions/checkout@master
+#      - name: Use Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
       - name: Setup the code
         run: npm install
       - name: Build the code
@@ -37,9 +38,15 @@ jobs:
         with:
           name: build
       - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: w9jds/firebase-action@master
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CAPSTONE_ACCESSIBILITY }}'
-          channelId: live
-          projectId: capstone-accessibility
+          args: deploy --only hosting
+          env:
+            FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
+#      - name: Deploy to Firebase
+#        uses: FirebaseExtended/action-hosting-deploy@v0
+#        with:
+#          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+#          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CAPSTONE_ACCESSIBILITY }}'
+#          channelId: live
+#          projectId: capstone-accessibility
