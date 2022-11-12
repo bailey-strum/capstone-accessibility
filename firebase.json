@@ -4,8 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "site": "capstone-accessibility",
-    "public": "public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
