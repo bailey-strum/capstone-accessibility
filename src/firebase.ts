@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import {addDoc, getFirestore, collection } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import {createUserWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "@firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,5 +18,56 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const firestore_db = getFirestore(app);
-export const firebase_auth = getAuth(app);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+
+const logInWithEmailAndPassword = async (email: string, password: string) => {
+    try {
+        await signInWithEmailAndPassword(auth, email, password);
+    } catch (err: any) {
+        console.error(err);
+        alert(err.message);
+    }
+};
+
+const registerWithEmailAndPassword = async (name: string, email: string, password: string) => {
+    try {
+        const res = await createUserWithEmailAndPassword(auth, email, password);
+        const user = res.user;
+        await addDoc(collection(db, "users"), {
+            uid: user.uid,
+            name,
+            authProvider: "local",
+            email,
+        });
+    } catch (err: any) {
+        console.error(err);
+        alert(err.message);
+    }
+};
+
+const sendPasswordReset = async (email: string) => {
+    try {
+        await sendPasswordResetEmail(auth, email);
+        alert("Password reset link sent!");
+    } catch (err: any) {
+        console.error(err);
+        alert(err.message);
+    }
+};
+
+const logout = () => {
+    signOut(auth).then(r => {
+        console.log('User has logged out.')
+    });
+};
+
+export {
+    auth,
+    db,
+    logInWithEmailAndPassword,
+    registerWithEmailAndPassword,
+    sendPasswordReset,
+    logout,
+};
