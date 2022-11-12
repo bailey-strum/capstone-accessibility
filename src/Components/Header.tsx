@@ -1,7 +1,8 @@
 import { Box, Button } from "@mui/material";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import SimpleDialog from "../Pages/ContrastChecker";
+import {logout} from "../firebase";
 
 
 const Header = () => {
@@ -67,7 +68,7 @@ const Header = () => {
                 
                 <Box style={{marginRight: -125}}>
                     <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="/pour" className="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="/" className="nav-link px-2 link-secondary">Home</a></li>
                         <li><Link to={'/catalog'} className="nav-link px-2 link-dark">Catalog</Link></li>
                         <li><Link to={'/about'} className="nav-link px-2 link-dark">About</Link></li>
                     </ul>
@@ -103,6 +104,9 @@ const Header = () => {
                             onClick={() => register()}>
                             Sign Up
                         </Button>
+                        <button className="dashboard__btn" onClick={logout}>
+                            Logout
+                        </button>
                     </Box>
                 </div>
             </header>

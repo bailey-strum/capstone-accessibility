@@ -25,6 +25,7 @@ const auth = getAuth(app);
 const logInWithEmailAndPassword = async (email: string, password: string) => {
     try {
         await signInWithEmailAndPassword(auth, email, password);
+        console.log('User has signed in!')
     } catch (err: any) {
         console.error(err);
         alert(err.message);
@@ -43,7 +44,7 @@ const registerWithEmailAndPassword = async (name: string, email: string, passwor
         });
     } catch (err: any) {
         console.error(err);
-        alert(err.message);
+        alert(err);
     }
 };
 

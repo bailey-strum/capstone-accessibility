@@ -1,4 +1,5 @@
-import { Component } from "react";
+import React, { Component } from "react";
+import {logout} from "../firebase";
 
 
 class Nav extends Component {
@@ -15,7 +16,9 @@ class Nav extends Component {
                 
                 <ul className="navbar-nav px-3">
                     <li className="nav-item text-nowrap">
-                        <a className="nav-link px-3" href="/pour">Sign out</a>
+                        <button className="dashboard__btn" onClick={logout}>
+                            Logout
+                        </button>
                     </li>
                 </ul>
             </header>
