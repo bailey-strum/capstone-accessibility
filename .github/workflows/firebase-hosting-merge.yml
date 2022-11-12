@@ -30,13 +30,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
+      - name: Checkout Repo
         uses: actions/checkout@master
-      - name: download artifact
-        users: actions/download-artifact@master
+      - name: Download Artifact
+        uses: actions/download-artifact@master
         with:
           name: build
-      - name: deploy to firebase
+      - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
