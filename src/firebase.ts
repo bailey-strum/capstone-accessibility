@@ -64,6 +64,34 @@ const logout = () => {
     });
 };
 
+// need to add uid to link to user to scores
+const stats = async (score: number) => {
+    const docRef1 = await addDoc(collection(db, "userStatistics"), {
+        Quiz1: score
+      });
+      console.log("Document written with ID: ", docRef1.id);
+
+      const docRef2 = await addDoc(collection(db, "userStatistics"), {
+        Quiz2: score
+      });
+      console.log("Document written with ID: ", docRef2.id);
+
+      const docRef3 = await addDoc(collection(db, "userStatistics"), {
+        Quiz3: score
+      });
+      console.log("Document written with ID: ", docRef3.id);
+
+      const docRef4 = await addDoc(collection(db, "userStatistics"), {
+        Quiz4: score
+      });
+      console.log("Document written with ID: ", docRef4.id);
+
+      const docRef5 = await addDoc(collection(db, "userStatistics"), {
+        Quiz5: score
+      });
+      console.log("Document written with ID: ", docRef5.id);
+};
+
 export {
     auth,
     db,
@@ -71,4 +99,5 @@ export {
     registerWithEmailAndPassword,
     sendPasswordReset,
     logout,
+    stats,
 };
