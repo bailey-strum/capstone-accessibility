@@ -104,9 +104,18 @@ const Header = () => {
                             onClick={() => register()}>
                             Sign Up
                         </Button>
-                        <button className="dashboard__btn" onClick={logout}>
+                        <Button
+                            style={{
+                                
+                                margin: 5,
+                                padding: 5
+                            }}
+                            size="small"
+                            variant="outlined"
+                            color="secondary"
+                            onClick={logout}>
                             Logout
-                        </button>
+                        </Button>
                     </Box>
                 </div>
             </header>
