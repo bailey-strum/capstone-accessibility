@@ -8,6 +8,10 @@ import Login from "./Pages/LoggedOut/Login";
 import Catalog from "./Pages/LoggedOut/Catalog";
 import About from "./Pages/LoggedOut/About";
 import Reset from './Pages/LoggedOut/Reset';
+import Perceivable from './Pages/LoggedOut/Perceivable';
+import Operable from './Pages/LoggedOut/Operable';
+import Understandable from './Pages/LoggedOut/Understandable';
+import Robust from './Pages/LoggedOut/Robust';
 
 function App() {
     return (
@@ -19,6 +23,10 @@ function App() {
                 <Route path="login/" element ={<Login />} />
                 <Route path="catalog/" element ={<Catalog />} />
                 <Route path="about/" element ={<About />} />
+                <Route path="perceivable/" element ={<Perceivable />} />
+                <Route path="operable/" element ={<Operable />} />
+                <Route path="understandable/" element = {<Understandable />} />
+                <Route path="robust/" element = {<Robust />} />
                 {/*Logged in pages*/}
                 <Route path="/reset" element={<Reset />} />
                 <Route path="/dashboard" element={<Dashboard/>} />

@@ -32,6 +32,7 @@ const HomeScreen = () => {
 
                 <main>
                     <Box  display="flex" justifyContent="center" className="row" sx={{ justifyContent: 'space-between', pt: 8 }}>
+                        <Link to = "perceivable/">
                         <Card sx={{ maxWidth: 310 }}>
                             <CardActionArea>
                                 <CardMedia
@@ -42,14 +43,16 @@ const HomeScreen = () => {
                                 alt="perceivable"
                                 />
                                 <CardContent>
-                                
+
                                 <Typography variant="body2" color="text.secondary">
-                                    Something about how website need to be more perceivable idk
+                                    Capability of being perceived, visible, and discernable.
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-
+                        </Link>
+                    
+                        <Link to = "operable/">
                         <Card sx={{ maxWidth: 310 }}>
                             <CardActionArea>
                                 <CardMedia
@@ -61,12 +64,14 @@ const HomeScreen = () => {
                                 <CardContent>
                                 
                                 <Typography variant="body2" color="text.secondary">
-                                    Something about how website need to be more operable idk
+                                    Capability of being easy to use and navigable. 
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
+                        </Link>
 
+                        <Link to = "understandable/">
                         <Card sx={{ maxWidth: 350}}>
                             <CardActionArea>
                                 <CardMedia
@@ -78,12 +83,14 @@ const HomeScreen = () => {
                                 <CardContent>
                                 
                                 <Typography variant="body2" color="text.secondary">
-                                    Something about how website need to be more, i forgot what u stands for
+                                    Capability of being easily understood, and readable. 
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
+                        </Link>
 
+                        <Link to = "robust/">
                         <Card sx={{ maxWidth: 310 }}>
                             <CardActionArea>
                                 <CardMedia
@@ -95,12 +102,12 @@ const HomeScreen = () => {
                                 <CardContent>
                                 
                                 <Typography variant="body2" color="text.secondary">
-                                    Something about how website need to be more robust
+                                    Capability of being compatible with current and future tools. 
                                 </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-
+                        </Link>
                     </Box>
                     
 
