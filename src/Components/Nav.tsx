@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {logout} from "../firebase";
-
+import { Box, Button } from "@mui/material";
 
 class Nav extends Component {
     render() {
@@ -16,9 +16,18 @@ class Nav extends Component {
                 
                 <ul className="navbar-nav px-3">
                     <li className="nav-item text-nowrap">
-                        <button className="dashboard__btn" onClick={logout}>
+                    <Button
+                            style={{
+                                
+                                margin: 5,
+                                padding: 5
+                            }}
+                            size="small"
+                            variant="outlined"
+                            color="primary"
+                            onClick={logout}>
                             Logout
-                        </button>
+                        </Button>
                     </li>
                 </ul>
             </header>
