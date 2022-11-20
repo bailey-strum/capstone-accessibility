@@ -3,7 +3,7 @@ import {useState} from "react";
 import { Link } from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import Header from "../../Components/Header";
-
+import "./operable.css";
 
 
 const Operable = () => {
@@ -13,7 +13,7 @@ const Operable = () => {
         <head></head>
         <body>
 
-        <div className="intial_paragraph">
+        <div className="first_paragraph">
         <p>Functionality available from keyboard - the keyboard should be the baseline of expected input rather than keyboard and mouse. This means that a standard keyboard should be able to seamlessly navigate and operate the functionality of a website. </p>
         </div>
 <div className="io_methods">

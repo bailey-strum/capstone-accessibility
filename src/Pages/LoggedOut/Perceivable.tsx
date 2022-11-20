@@ -3,14 +3,14 @@ import {useState} from "react";
 import { Link } from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import Header from "../../Components/Header";
-
+import "./perceivable.css";
 
 
 const Perceivable = () => {
 
     return (
         <html>
-        <head> </head>
+        <head>  </head>
         <body>
     
         <div className="initial_paragraph">
@@ -155,8 +155,10 @@ const Perceivable = () => {
        </div>
 
 
+
+
+
         </body>
-        
         </html>
     )
 }
