@@ -8,7 +8,7 @@ import "./understandable.css";
 const Understandable = () => {
     return (
         <html>
-        <head></head>
+        <Header/>
         <body>
 
     <div className="readability_paragraph">

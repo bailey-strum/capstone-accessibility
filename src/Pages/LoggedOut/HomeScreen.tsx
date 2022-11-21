@@ -1,6 +1,6 @@
 import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import {useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import Header from "../../Components/Header";
 
@@ -8,6 +8,7 @@ import Header from "../../Components/Header";
 
 const HomeScreen = () => {
     const [regredirect, setRegRedirect] = useState(false);
+    const navigate = useNavigate();
 
     async function getStarted() {
        
@@ -32,8 +33,8 @@ const HomeScreen = () => {
 
                 <main>
                     <Box  display="flex" justifyContent="center" className="row" sx={{ justifyContent: 'space-between', pt: 8 }}>
-                        <Link to = "perceivable/">
-                        <Card sx={{ maxWidth: 310 }}>
+                        
+                        <Card sx={{ maxWidth: 310 }} onClick={() => navigate('/perceivable')}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
@@ -50,10 +51,10 @@ const HomeScreen = () => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                        </Link>
+                        
                     
-                        <Link to = "operable/">
-                        <Card sx={{ maxWidth: 310 }}>
+                        
+                        <Card sx={{ maxWidth: 310 }} onClick={() => navigate('/operable')}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
@@ -69,10 +70,10 @@ const HomeScreen = () => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                        </Link>
+                       
 
-                        <Link to = "understandable/">
-                        <Card sx={{ maxWidth: 350}}>
+                       
+                        <Card sx={{ maxWidth: 350}} onClick={() => navigate('/understandable')}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
@@ -88,10 +89,10 @@ const HomeScreen = () => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                        </Link>
+                 
 
-                        <Link to = "robust/">
-                        <Card sx={{ maxWidth: 310 }}>
+                   
+                        <Card sx={{ maxWidth: 310 }} onClick={() => navigate('/robust')}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
@@ -107,7 +108,7 @@ const HomeScreen = () => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                        </Link>
+                   
                     </Box>
                     
 

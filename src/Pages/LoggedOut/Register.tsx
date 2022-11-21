@@ -1,6 +1,8 @@
+import { Container, Box, Typography, TextField, Button, Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
+import Header from "../../Components/Header";
 import {
     auth,
     registerWithEmailAndPassword,
@@ -22,36 +24,88 @@ function Register() {
         if (user) navigate("/dashboard");
     }, [user, loading]);
     return (
-        <div className="register">
-            <div className="register__container">
-                <input
-                    type="text"
-                    className="register__textBox"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Full Name"
-                />
-                <input
-                    type="text"
-                    className="register__textBox"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="E-mail Address"
-                />
-                <input
-                    type="password"
-                    className="register__textBox"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Password"
-                />
-                <button className="register__btn" onClick={register}>
-                    Register
-                </button>
-                <div>
-                    Already have an account? <Link to="/login">Login</Link> now.
-                </div>
-            </div>
+
+        <div>
+                    
+
+        <div className="container">
+            <Header/>
+            <main>
+            <Container component="main" maxWidth="xs">
+            
+            <Box
+                sx={{
+                marginTop: 8,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                }}
+            >
+                
+                <Typography component="h1" variant="h5">
+                Sign in
+                </Typography>
+                    <Box sx={{ mt: 1 }}>
+                    <TextField
+                        type="text"
+                        margin="normal"
+                        required
+                        fullWidth
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                            
+                        placeholder="Full name"
+                        autoFocus
+                        />
+
+                        <TextField
+                        type="text"
+                        margin="normal"
+                        required
+                        fullWidth
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="E-mail Address"
+                        autoFocus
+                        />
+                        <TextField
+                        type="password"
+                        margin="normal"
+                        required
+                        fullWidth
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Password"
+                        autoFocus
+                        />
+                        
+                        <Button
+                        
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                        onClick={register}
+                        >
+                        Sign Up
+                        </Button>
+                        <Grid container>
+
+                        <Grid item>
+                            <Link to={'/login'} >
+                            {"Already have an account? Sign in"}
+                            </Link>
+                        </Grid>
+                        </Grid>
+                </Box>
+            </Box>
+            </Container>
+            </main>
+            
+
+        </div>
+
+
+            
         </div>
     );
 }
