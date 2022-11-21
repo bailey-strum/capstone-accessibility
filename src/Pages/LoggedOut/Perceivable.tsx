@@ -10,7 +10,7 @@ const Perceivable = () => {
 
     return (
         <html>
-        <head>  </head>
+        <Header/>
         <body>
     
         <div className="initial_paragraph">

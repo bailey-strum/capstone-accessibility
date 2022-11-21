@@ -8,7 +8,7 @@ import "./robust.css";
 const Robust = () => {
     return (
         <html>
-        <head></head>
+        <Header/>
         <body>
 
         <div className="robust_intial_paragraph">

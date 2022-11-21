@@ -10,7 +10,7 @@ const Operable = () => {
 
     return (
         <html>
-        <head></head>
+        <Header/>
         <body>
 
         <div className="first_paragraph">
