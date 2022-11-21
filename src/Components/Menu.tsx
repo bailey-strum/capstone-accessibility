@@ -13,10 +13,10 @@ const Menu = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file" className="align-text-bottom"></span>
+                        <Link to={'/profile'}className="nav-link"> 
+                                <span data-feather="bar-chart-2" className="align-text-bottom"></span>
                                 User Profile
-                            </a>
+                        </Link>
                         </li>
                         <li className="nav-item">
                             <Link to={'/quiz'}className="nav-link">

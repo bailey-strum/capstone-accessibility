@@ -12,7 +12,10 @@ import Perceivable from './Pages/LoggedOut/Perceivable';
 import Operable from './Pages/LoggedOut/Operable';
 import Understandable from './Pages/LoggedOut/Understandable';
 import Robust from './Pages/LoggedOut/Robust';
+
 import Quiz from './Pages/Quiz/Quiz';
+
+import Profile from './Pages/userProfile';
 
 function App() {
     return (
@@ -32,7 +35,11 @@ function App() {
                 <Route path="/reset" element={<Reset />} />
                 <Route path="/dashboard" element={<Dashboard/>} />
                 <Route path="stats/" element ={<Stats />} />
+
                 <Route path="quiz/" element ={<Quiz />} />
+
+                <Route path="profile/" element ={<Profile />} />
+
             </Routes>
         </div>
     )
