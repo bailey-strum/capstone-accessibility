@@ -19,10 +19,10 @@ const Menu = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link to={'/quiz'}className="nav-link">
                             <span data-feather="shopping-cart" className="align-text-bottom"></span>
                             Quiz
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
