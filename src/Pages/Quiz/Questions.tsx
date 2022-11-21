@@ -134,7 +134,7 @@ export const questions = {
             "question": "You are creating functionality for a website and are being limited by common standards. What should you do?",
             "correct_answer": "Conform to the standards",
             "incorrect_answers": ["Disregard the standards, other websites should conform to yours", "Manipulate the standards heavily", "Conform to some standards only" ]
-        },
+        }
         
         
 
