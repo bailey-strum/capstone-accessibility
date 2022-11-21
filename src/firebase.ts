@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {addDoc, getFirestore, collection } from "firebase/firestore";
+import {addDoc, getFirestore, collection, doc, setDoc, arrayUnion } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 import {createUserWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "@firebase/auth";
 
@@ -64,32 +64,28 @@ const logout = () => {
     });
 };
 
-// need to add uid to link to user to scores
-const stats = async (score: number) => {
-    const docRef1 = await addDoc(collection(db, "userStatistics"), {
-        Quiz1: score
-      });
-      console.log("Document written with ID: ", docRef1.id);
-
-      const docRef2 = await addDoc(collection(db, "userStatistics"), {
-        Quiz2: score
-      });
-      console.log("Document written with ID: ", docRef2.id);
-
-      const docRef3 = await addDoc(collection(db, "userStatistics"), {
-        Quiz3: score
-      });
-      console.log("Document written with ID: ", docRef3.id);
-
-      const docRef4 = await addDoc(collection(db, "userStatistics"), {
-        Quiz4: score
-      });
-      console.log("Document written with ID: ", docRef4.id);
-
-      const docRef5 = await addDoc(collection(db, "userStatistics"), {
-        Quiz5: score
-      });
-      console.log("Document written with ID: ", docRef5.id);
+// dynamically adds and updates scores based on quiz ID
+const stats = async (quizID: string, score: number) => {
+    const user = auth.currentUser;
+    if(user){
+        // this adds score data if the user's document exists
+        // otherwise creates a new document and adds score data
+        await setDoc(doc(db, "userStatistics", user.uid),  
+        { 
+            name: user.email,
+            [quizID]: {
+                scores: arrayUnion([score])
+            },
+        },
+            {
+                merge: true
+            })
+            .then(() => {
+                console.log("Document successfully updated.")})
+            .catch((error) => {
+                console.log('Error updating document.')});
+    }
+      
 };
 
 export {
