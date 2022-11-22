@@ -1,7 +1,10 @@
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
-import { Box } from '@mui/material';
-import { useState } from 'react';
+import { Box, hexToRgb } from '@mui/material';
+import { useEffect, useState } from 'react';
+import { wcagContrastChecker } from '@mdhnpm/wcag-contrast-checker';
+
+
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -36,12 +39,15 @@ function SimpleDialog(props: SimpleDialogProps) {
   function rgbToHex(r: number, g: number, b: number) {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
   }
-
-  
+   
   var hex1 = rgbToHex(Number(r1),Number(g1),Number(b1));
   var hex2 = rgbToHex(Number(r2),Number(g2),Number(b2));
-  
 
+  useEffect(() => {
+    var constrast_check = wcagContrastChecker(hex1, hex2);
+  }, [hex1, hex2]);
+  
+  
   
   return (
     <Dialog onClose={handleClose} open={open}>
@@ -72,7 +78,13 @@ function SimpleDialog(props: SimpleDialogProps) {
             </div>
         </div>
         <div id="sample">
-            <div contentEditable id="sample-text" suppressContentEditableWarning={true}>
+            <div contentEditable id="sample-text" 
+            suppressContentEditableWarning={true}
+            style={{
+              backgroundColor: hexToRgb(hex2),
+              color: hexToRgb(hex1),
+            }}
+            >
             Click to change demo text
             </div>
         </div>

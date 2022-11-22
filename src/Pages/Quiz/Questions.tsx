@@ -345,7 +345,8 @@ export const fetchQuestions  = (
         ...question,
         answers: shuffleArray([
             ...question.incorrect_answers,
-            question.correct_answer
+            question.correct_answer,
+            question.topic
         ])
     }));
 };
