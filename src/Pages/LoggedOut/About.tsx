@@ -6,7 +6,7 @@ const About = () => {
     return (
                 <html>
                 <Header/>
-                <body className="norbert">
+                <div className="norbert">
                     <div className="about_us_intro">
                         <h5> Lucky 13 Team</h5>
                         <p>We are a senior capstone group, here at the University of North Texas. 
@@ -59,7 +59,7 @@ const About = () => {
                     </div>
 
                     
-            </body>
+            </div>
 </html>
 
     )

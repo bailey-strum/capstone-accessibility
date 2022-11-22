@@ -8,7 +8,7 @@ const Understandable = () => {
         <body>
     <div className="topic_understandable">Understandable</div>
     <div className="readability_paragraph">
-    <h6 id="understandable_intro"> Readability </h6>
+    <h5 id="understandable_intro"> Readability </h5>
     <p>When authoring the content of your web pages, you must ensure that text is readable and understandable by as broad an audience as possible. This should also be implemented for use with assistive technologies. </p>
 
 <p> Decoding the text: </p>
@@ -47,7 +47,7 @@ const Understandable = () => {
 </div>
 
 <div className="predictability_paragraph">
-<p> Predictability </p>
+<h5> Predictability </h5>
 <p> The presentation and layout of the site, and how it is meant to be operated should be consistent throughout. This is important in helping users to efficiently learn how to navigate and utilize the functionality of your site, and therefore reach their needs and preferences quicker.</p>
 <p>The UI should exhibit repeated components and structures, and the navigation mechanisms should appear in the same place on multiple pages. Relative order of items should be preserved. The webpage should not undergo significant changes without consent from the user. Unexpected context changes can disorient users, especially those with visual disabilities or cognitive limitations.</p>
 

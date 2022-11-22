@@ -1,7 +1,7 @@
 .norbert{
   background-image: url(/src/Assets/images/Norbert3.png);
   background-attachment: fixed;
-  height:644px;
+  background-size: 100% auto;
 }
 
 .about_us_intro{

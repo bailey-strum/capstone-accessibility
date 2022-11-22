@@ -14,8 +14,9 @@
     display:flexbox;
     align-items: center;
     left: 50px;
-    top: 25px;
+    bottom: 25px;
     padding:30px;
+    top: 0px;
     font-size: 16px;
     justify-content: center;
     position: relative;
@@ -25,19 +26,20 @@
 }
 
 .b_list {
-    padding: 50px;
+    margin-top: 25px;
+    padding: 10px;
 }
 
 .adapt_paraph{
-    padding: 50px;
+    padding: 10px;
 }
 
 .gen_list{
-    padding: 50px;
+    padding: 10px;
 }
 
 .text_list{
-    padding: 50px;
+    padding: 10px;
 }
 
 .non_text_list{
@@ -74,7 +76,17 @@
 }
 
 .first_paragraph{
-    padding: 10px;
+    display:flexbox;
+    align-items: center;
+    left: 50px;
+    bottom: 25px;
+    padding:30px;
+    top: 0px;
+    font-size: 16px;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(255, 242, 244);
+    width: 1000px;
 }
 
 .io_methods{
@@ -156,10 +168,21 @@
 }
 
 .robust_intial_paragraph{
-    padding: 10px;
+    display:flexbox;
+    align-items: center;
+    left: 50px;
+    bottom: 25px;
+    top: 0px;
+    padding:30px;
+    font-size: 16px;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(255, 242, 244);
+    width: 1000px;
 }
 
 .robust_introduction_paragraph{
+    margin-top: 10px;
     padding: 10px;
 }
 
