@@ -73,9 +73,7 @@ const stats = async (quizID: string, score: number) => {
         await setDoc(doc(db, "userStatistics", user.uid),  
         { 
             name: user.email,
-            [quizID]: {
-                scores: arrayUnion([score])
-            },
+            [quizID]: arrayUnion(score),
         },
             {
                 merge: true
