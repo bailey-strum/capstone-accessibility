@@ -12,7 +12,7 @@ const Operable = () => {
         <html>
         <Header/>
         <body>
-
+        <div className="topic_operable">Operable</div>
         <div className="first_paragraph">
         <p id="operable_intro">Functionality available from keyboard - the keyboard should be the baseline of expected input rather than keyboard and mouse. This means that a standard keyboard should be able to seamlessly navigate and operate the functionality of a website. </p>
         </div>
@@ -42,7 +42,8 @@ const Operable = () => {
 </div>
 
 <div className="second_paragraph">
-<p>Users without fine motor skills or dexterity should be accounted for in cases of functionality requiring fast and/or precise inputs from the user. If such a need for fast and/or precise inputs, then there should be tools for the user to comfortably work the functionality/webpage. . Additionally there should be an undo button, or some similar method for undoing an action, for most accidental activations, and where this isn’t possible, there should be a clear warning before such activations. </p>
+<p>Users without fine motor skills or dexterity should be accounted for in cases of functionality requiring fast and/or precise inputs from the user. If such a need for fast and/or precise inputs, then there should be tools for the user to comfortably work the functionality/webpage.</p>
+<p>Additionally there should be an undo button, or some similar method for undoing an action, for most accidental activations, and where this isn’t possible, there should be a clear warning before such activations. </p>
 
 <p> Below we have included some helpful references</p>
 <ul>

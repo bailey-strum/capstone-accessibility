@@ -10,7 +10,7 @@ const Robust = () => {
         <html>
         <Header/>
         <body>
-
+        <div className="topic_robust">Robust</div>
         <div className="robust_intial_paragraph">
         <p id="robust_intro">Users will be using many different kinds of web-browsers, and good quality web content will be accessible by as many web browsers as possible, if wide reach is the desired goal. These different web browsers will have different tools, extensions, etc which will all be implemented differently. </p>
         </div>

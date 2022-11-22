@@ -6,7 +6,7 @@ const Understandable = () => {
         <html>
         <Header/>
         <body>
-
+    <div className="topic_understandable">Understandable</div>
     <div className="readability_paragraph">
     <h6 id="understandable_intro"> Readability </h6>
     <p>When authoring the content of your web pages, you must ensure that text is readable and understandable by as broad an audience as possible. This should also be implemented for use with assistive technologies. </p>

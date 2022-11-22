@@ -1,23 +1,21 @@
 import Header from "../../Components/Header";
-import "./pour.css";
+import "./about.css";
 
 const About = () => {
    
     return (
-        <div>
-            
-
-            <div className="about_us_container">
-                
+                <html>
                 <Header/>
-
-                <main>
+                <body className="norbert">
                     <div className="about_us_intro">
                         <h5> Lucky 13 Team</h5>
-                        <p>We are a senior capstone group, here at the University of North Texas. We of Lucky 13 will create a tool to help educate individuals on accessibility for those intending to build websites. Our goal is to describe, demonstrate and explain what aspects of a website can be changed to be accessible to more people. Our website will educate product owners, web developers, and designers on WCAG policies and why they are essential in a fun and intuitive way to improve the web for all.</p>
+                        <p>We are a senior capstone group, here at the University of North Texas. 
+                            We of Lucky 13 will create a tool to help educate individuals on accessibility for those intending to build websites. 
+                            Our goal is to describe, demonstrate and explain what aspects of a website can be changed to be accessible to more people. 
+                            Our website will educate product owners, web developers, and designers on WCAG policies and why they are essential in a fun and intuitive way to improve the web for all.</p>
                     </div>
                     <div className="table_header">
-                    <h5> Team members </h5>
+                        <h3> Team members </h3>
                     </div>
                     <div className="about_us_table">
                     <table>
@@ -59,21 +57,13 @@ const About = () => {
                         </tr>
                     </table>
                     </div>
-                </main>
-                
 
-            </div>
-
-            
-                
-        </div>
+                    
+            </body>
+</html>
 
     )
 }
-
-
-
-
 
 
 export default About;

@@ -11,31 +11,34 @@ const Perceivable = () => {
     return (
         <html>
         <Header/>
+
         <body>
-    
+        <div className="topic_perceivable">Perceivable</div>
         <div className="initial_paragraph">
         <p id="perceive_intro"> Making a website perceivable means that users must be able to perceive the information in some way using one or more of their senses. The critical part of the perceivable category in web accessibility is that the content is presented in different ways, enough to make sure as many people as possible can still perceive it.</p>
         
-        <p>Adaptability: Content should have multiple ways of being presented.</p>
-        <p>Distinguishability: Content should be easy to see and hear.</p>
+        <p><u>Adaptability</u>: Content should have multiple ways of being presented.</p>
+        <p><u>Distinguishability</u>: Content should be easy to see and hear.</p>
         </div>
         
         <div className="b_list">
         Some important examples of making your website perceivable include:
-        
-        Text to speech
-        Descriptive captioning for images
-        Informative labels
-        Description of data represented in charts, graphs, and diagrams
-        
+        <ul>
+        <li>Text to speech </li>
+        <li>Descriptive captioning for images</li>
+        <li>Informative labels</li>
+        <li>Description of data represented in charts, graphs, and diagrams</li>
+        </ul>
         </div>        
 
 
         <div className="adapt_paraph">
-        Adaptability
-        In a nutshell: This means providing sufficient alternatives to your website’s content.
+        <h5>Adaptability</h5>
+        <p>In a nutshell: This means providing sufficient alternatives to your website’s content.</p>
         
-        Practice good semantics when building your pages. Content structures, things like the headings, lists, tables, etc. must be marked up properly to allow users to change the presentation of the content. The sequences of information should be independent of any way of presenting it. For example, the correct sequence of reading the page when using text to speech should always be programmatically determinable.
+        Practice good semantics when building your pages. Content structures, things like the headings, lists, tables, etc. must be marked up properly to allow users to change the presentation of the content.
+        
+        <p>The sequences of information should be independent of any way of presenting it. For example, the correct sequence of reading the page when using text to speech should always be programmatically determinable.</p>
         
         Understanding the content should not be reliant on any one sensory characteristic (color, size, orientation, placement, etc.)
         
@@ -44,7 +47,7 @@ const Perceivable = () => {
         </div>
 
         <div className="gen_list">
-       <h5>General:</h5>
+       <h5>General</h5>
         <ul>
         <li>Portrait and landscape orientations </li>
        <li>Input and user interface purposes are always identifiable</li> 
