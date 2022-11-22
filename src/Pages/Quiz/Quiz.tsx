@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import {stats} from "../../firebase";
 
 
 //Imported Components
@@ -57,7 +57,10 @@ export default function Quiz() {
 
   const handleNext = () => {
     if (number < TOTAL_QUESTIONS - 1) setNumber((prev) => prev + 1);
-    else setComplete(true);
+    else {
+      setComplete(true);
+      stats(topic,score);
+    }
   };
 
   const handleTopic = (e: React.ChangeEvent<HTMLSelectElement>) => {
