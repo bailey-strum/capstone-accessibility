@@ -3,6 +3,7 @@ import Dialog from '@mui/material/Dialog';
 import { Box, hexToRgb } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { wcagContrastChecker } from '@mdhnpm/wcag-contrast-checker';
+import { ElectricScooterSharp } from '@mui/icons-material';
 
 
 
@@ -20,6 +21,10 @@ function SimpleDialog(props: SimpleDialogProps) {
   const [r2, changeR2] = useState("255")
   const [g2, changeG2] = useState("255")
   const [b2, changeB2] = useState("255")
+  const [normalAA, setNormalAA] = useState<boolean>(true)
+  const [largeAA, setLargeAA] = useState<boolean>(true)
+  const [normalAAA, setNormalAAA] = useState<boolean>(true)
+  const [largeAAA, setLargeAAA] = useState<boolean>(true)
 
   
 
@@ -45,6 +50,31 @@ function SimpleDialog(props: SimpleDialogProps) {
 
   useEffect(() => {
     var constrast_check = wcagContrastChecker(hex1, hex2);
+    if (constrast_check.largeText.aa == false) {
+      setLargeAA(false)
+    } else{
+      setLargeAA(true)
+    }
+
+    if (constrast_check.regularText.aa == false) {
+      setNormalAA(false)
+    } else{
+      setNormalAA(true)
+    }
+
+    if (constrast_check.largeText.aaa == false) {
+      setLargeAAA(false)
+    } else{
+      setLargeAAA(true)
+    }
+
+    if (constrast_check.regularText.aaa == false) {
+      setNormalAAA(false)
+    } else{
+      setNormalAAA(true)
+    }
+
+    console.log(constrast_check);
   }, [hex1, hex2]);
   
   
@@ -60,21 +90,50 @@ function SimpleDialog(props: SimpleDialogProps) {
         >
 
         <div id="boxes">
-            <div id="aa-large">
+            <div 
+              id="aa-large"
+              style={{
+                backgroundColor: largeAA ? 'green' : 'red'
+                
+              }}
+            >
             <span>Large Text</span>
             <span>WCAG AA</span>
+            <span>{normalAAA ? "✓ Pass" : "✕ Fail"}</span>
             </div>
-            <div id="aa-normal">
+            <div 
+              id="aa-normal"
+              style={{
+                backgroundColor: normalAA ? 'green' : 'red'
+              }}
+              >
             <span>Normal Text</span>
             <span>WCAG AA</span>
+            <span>{normalAA ? "✓ Pass" : "✕ Fail"}</span>
             </div>
-            <div id="aaa-large">
+            
+            <div 
+              id="aaa-large"
+              style={{
+                backgroundColor: largeAAA ? 'green' : 'red'
+              }}
+              >
             <span>Large Text</span>
             <span>WCAG AAA</span>
+            <span>{largeAAA ? "✓ Pass" : "✕ Fail"}</span>
             </div>
-            <div id="aaa-normal">
+            <div 
+              id="aaa-normal"
+              style={{
+                backgroundColor: normalAAA ? 'green' : 'red',
+                content: normalAAA ? "✓ Pass" : "✕ Fail",
+                
+              }}
+              
+              >
             <span>Normal Text</span>
             <span>WCAG AAA</span>
+            <span>{normalAAA ? "✓ Pass" : "✕ Fail"}</span>
             </div>
         </div>
         <div id="sample">
