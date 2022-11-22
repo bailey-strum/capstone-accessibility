@@ -19,19 +19,19 @@ const Catalog = () => {
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         <Grid item xs={6}>
                             <Typography variant="h3">
-                                Accessbility
+                                     Accessibility
                             </Typography>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        What is accessibility
+                                        <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/" > Introduction to Accessibility </a>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                        Fundamentals of accesibility                                    
+                                      <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/#what" > What is Accessibility </a>                                 
                                     </a>
                                 </li>
                                 <li className="nav-item">

@@ -1,0 +1,21 @@
+.about_us_container{
+  background-image: url(/Users/tea/Development/capstone-accessibility/src/Assets/images/Norbert3.png)
+  
+}
+
+.about_us_intro{
+    padding-left: 10px;
+    background-color: purple;
+    opacity: 80%;
+}
+.table_header{
+  padding: 10px;
+  color: whitesmoke;
+}
+.about_us_table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: inline-flex;
+    max-width: 26%;
+    background-color: rgb(104, 199, 239);
+}
