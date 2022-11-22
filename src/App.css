@@ -175,7 +175,7 @@ h1, h2 {
 }
 
 #boxes > div::after {
-  content: "✓ Pass";
+  
   display: block;
   position: absolute;
   color: #000;
