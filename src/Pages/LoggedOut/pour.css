@@ -127,3 +127,46 @@
 .computer_os_list{
     padding: 10px;
 }
+
+/*About*/
+.about_us_container{
+    background-image: url(/src/Assets/images/Norbert3.png)
+    
+  }
+  
+  .about_us_intro{
+      padding-left: 10px;
+      background-color: purple;
+      opacity: 80%;
+  }
+  .table_header{
+    padding: 10px;
+    color: whitesmoke;
+  }
+  .about_us_table{
+      border: 1px solid black;
+      border-collapse: collapse;
+      display: inline-flex;
+      max-width: 26%;
+      background-color: rgb(104, 199, 239);
+  }
+
+/* Getting Started*/
+.getting_started_intro{
+    padding: 10px;
+}
+.getting_started_disability{
+    padding: 10px;
+}
+
+.getting_started_options_to_consider{
+    padding: 10px;
+}
+
+.getting_started_further_reading{
+    padding: 10px;
+}
+
+.getting_started_begin{
+    padding: 10px;
+}

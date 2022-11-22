@@ -12,7 +12,7 @@ import Perceivable from './Pages/LoggedOut/Perceivable';
 import Operable from './Pages/LoggedOut/Operable';
 import Understandable from './Pages/LoggedOut/Understandable';
 import Robust from './Pages/LoggedOut/Robust';
-
+import GettingStarted from './Pages/LoggedOut/gettingStarted';
 import Quiz from './Pages/Quiz/Quiz';
 
 import Profile from './Pages/userProfile';
@@ -31,6 +31,7 @@ function App() {
                 <Route path="operable/" element ={<Operable />} />
                 <Route path="understandable/" element = {<Understandable />} />
                 <Route path="robust/" element = {<Robust />} />
+                <Route path="gettingStarted/" element = {<GettingStarted />} />
                 {/*Logged in pages*/}
                 <Route path="/reset" element={<Reset />} />
                 <Route path="/dashboard" element={<Dashboard/>} />

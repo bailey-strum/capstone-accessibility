@@ -19,7 +19,7 @@ const HomeScreen = () => {
 
 
     if (regredirect) {
-        return <Navigate to = {'/register'}/>;
+        return <Navigate to = {'/gettingStarted'}/>;
     }
 
 
