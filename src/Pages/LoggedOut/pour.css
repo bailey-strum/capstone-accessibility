@@ -1,0 +1,129 @@
+/*Perceivable*/
+.initial_paragraph {
+    display:flex;
+    padding:10px;
+    font-size: 12px;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.b_list {
+    padding: 10px;
+}
+
+.adapt_paraph{
+    padding: 10px;
+}
+
+.gen_list{
+    padding: 10px;
+}
+
+.text_list{
+    padding: 10px;
+}
+
+.non_text_list{
+    padding: 10px;
+}
+
+.text_alternative_list
+{
+    padding: 10px;
+}
+
+.disting_list{
+    padding: 10px;
+}
+
+.cont_hov_list{
+    padding: 10px;
+}
+
+.wcag_standard
+{
+    padding: 10px;
+}
+
+/*Operable*/
+.first_paragraph{
+    padding: 10px;
+}
+
+.io_methods{
+    padding: 10px;
+}
+
+.second_paragraph{
+    padding: 10px;
+}
+
+.third_paragraph{
+    padding: 10px;
+}
+
+.fourth_paragraph{
+    padding: 10px;
+}
+
+.fifth_paragraph{
+    padding: 10px;
+}
+
+/*Understandable*/
+.readability_paragraph{
+    padding: 10px;
+}
+
+.improve_readability_paragraph{
+    padding: 10px;
+}
+
+.primary_language_paragraph{
+    padding: 10px;
+}
+
+.predictability_paragraph{
+    padding: 10px;
+}
+
+.change_on_req_paragraph{
+    padding: 10px;
+}
+
+.opt_to_consider_paragraph{
+    padding: 10px;
+}
+
+.const_in_appr_paragraph{
+    padding: 10px;
+}
+
+.input_assist_paragraph{
+    padding: 10px;
+}
+
+.important_note_paragraph{
+    padding: 10px;
+}
+
+/*Robust*/
+.robust_intial_paragraph{
+    padding: 10px;
+}
+
+.robust_introduction_paragraph{
+    padding: 10px;
+}
+
+.browsers_list{
+    padding: 10px;
+}
+
+.mobile_os_list{
+    padding: 10px;
+}
+
+.computer_os_list{
+    padding: 10px;
+}

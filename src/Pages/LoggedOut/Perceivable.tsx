@@ -3,7 +3,7 @@ import {useState} from "react";
 import { Link } from "react-router-dom";
 import {Navigate} from "react-router-dom";
 import Header from "../../Components/Header";
-import "./perceivable.css";
+import "./pour.css";
 
 
 const Perceivable = () => {

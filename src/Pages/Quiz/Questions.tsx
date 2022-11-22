@@ -14,7 +14,7 @@ export type QuestionState = Question & { answers: string[] };
 export enum Topic {
     PERCEIVABLE = "perceivable",
     OPERABLE = "operable",
-    UNDERSTANDABLE = "understandble",
+    UNDERSTANDABLE = "understandable",
     ROBUST = "robust"
   };
 
@@ -198,7 +198,7 @@ export const questions = {
             "correct_answer": "Include difficulty options - allow the user to choose between assisted, normal, hard, and very hard",
             "incorrect_answers": ["Don't include any options for the user to tweak their personal experience. The game designer had a specific vision for the game, and only specific people are worthy of playing the game", "Include minimal options for the user to tweak their personal experience. Only give control of volume" , "Allow the user to directly edit the game files and provide no protections in case they break it"]
         },
-        
+
         {
             "topic": "understandable",
             "question": "The understandable principle focuses on?",
@@ -272,7 +272,7 @@ export const questions = {
         {
             "topic": "understandable",
             "question": "Input assistance involves",
-            "correct_answer": "ll of these are correct",
+            "correct_answer": "All of these are correct",
             "incorrect_answers": ["Error messages and warnings", "Descriptive instructions", "Asking for confirmation"]
         },
     
@@ -287,7 +287,7 @@ export const questions = {
             "topic": "understandable",
             "question": "Examples of consistent navigation include",
             "correct_answer": "Headers and footers",
-            "incorrect_answers": ["Absence of labels", "Inaccessible links depending on what page you’re on", "Menus with unorganized subsections"]
+            "incorrect_answers": ["Absence of labels", "Inaccessible links depending on what page you are on", "Menus with unorganized subsections"]
         },
         
         {
