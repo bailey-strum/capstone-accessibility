@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import {stats} from "../../firebase";
 
 
 //Imported Components
@@ -38,6 +38,9 @@ export default function Quiz() {
     setQuestions(new_questions);
     setLoading(false);
     setGameOver(false);
+    if(complete){
+      stats(topic,score);
+    }
   };
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -57,7 +60,10 @@ export default function Quiz() {
 
   const handleNext = () => {
     if (number < TOTAL_QUESTIONS - 1) setNumber((prev) => prev + 1);
-    else setComplete(true);
+    else {
+      setComplete(true); 
+      stats(topic,score);
+    }
   };
 
   const handleTopic = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -72,7 +78,9 @@ export default function Quiz() {
       
       <QZWrapper>
         <h1>Accessibility Quiz</h1>
-        {complete && <div className="complete">Quiz is complete</div>}
+        {complete  && <div className="complete">Quiz is complete</div>
+        
+        }
 
         {gameOver || complete ? (
           <>
@@ -89,7 +97,7 @@ export default function Quiz() {
             </select>
           </>
         ) : null}
-        {!gameOver ? <p className="score">Score: {score}</p> : null}
+        {!gameOver ? <p className="score">Score: {score}</p> : null }
         {loading ? <img src={require('./../../Assets/images/loading.gif')} alt="loading" /> : null}
         {!loading && !gameOver && !complete && (
           <QuestionCard
