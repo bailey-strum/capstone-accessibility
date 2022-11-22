@@ -14,10 +14,10 @@ const Operable = () => {
         <body>
 
         <div className="first_paragraph">
-        <p>Functionality available from keyboard - the keyboard should be the baseline of expected input rather than keyboard and mouse. This means that a standard keyboard should be able to seamlessly navigate and operate the functionality of a website. </p>
+        <p id="operable_intro">Functionality available from keyboard - the keyboard should be the baseline of expected input rather than keyboard and mouse. This means that a standard keyboard should be able to seamlessly navigate and operate the functionality of a website. </p>
         </div>
 <div className="io_methods">
-<p>The following are examples of standard input methods</p>
+<p id="operable_standardIO">The following are examples of standard input methods</p>
 
 <ul>
    <li> A keyboard alone </li>
@@ -80,7 +80,7 @@ const Operable = () => {
 
 
 <div className="fifth_paragraph">
-<p>Users should be able to easily navigate themself both within the website and within the page they are located in  </p>
+<p id="operable_nagivation">Users should be able to easily navigate themself both within the website and within the page they are located in  </p>
 
 <p> For within the website </p>
 <ul>

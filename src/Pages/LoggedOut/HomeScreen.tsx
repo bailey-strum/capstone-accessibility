@@ -73,7 +73,7 @@ const HomeScreen = () => {
                        
 
                        
-                        <Card sx={{ maxWidth: 310}} onClick={() => navigate('/understandable')}>
+                        <Card sx={{ maxWidth: 350}} onClick={() => navigate('/understandable')}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"

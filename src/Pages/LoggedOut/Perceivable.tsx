@@ -14,7 +14,7 @@ const Perceivable = () => {
         <body>
     
         <div className="initial_paragraph">
-        <p> Making a website perceivable means that users must be able to perceive the information in some way using one or more of their senses. The critical part of the perceivable category in web accessibility is that the content is presented in different ways, enough to make sure as many people as possible can still perceive it.</p>
+        <p id="perceive_intro"> Making a website perceivable means that users must be able to perceive the information in some way using one or more of their senses. The critical part of the perceivable category in web accessibility is that the content is presented in different ways, enough to make sure as many people as possible can still perceive it.</p>
         
         <p>Adaptability: Content should have multiple ways of being presented.</p>
         <p>Distinguishability: Content should be easy to see and hear.</p>
@@ -52,7 +52,7 @@ const Perceivable = () => {
         </div>
 
         <div className="text_list">
-        <h5>Text content:</h5>
+        <h5 id ="perceive_text_option">Text content:</h5>
         <ul>
        <li> Customizable features make your website more accessible. </li>
         <li>Text to speech </li>
@@ -68,7 +68,7 @@ const Perceivable = () => {
 
 
         <div className="non_text_list">
-        <h5>Non-text content (images, audio, video, and multimedia): </h5>
+        <h5 id="perceive_nontext_options">Non-text content (images, audio, video, and multimedia): </h5>
         <p>With non-text content, you want to give the user an experience as close as possible to being able to see the visual media when they cannot see it. </p>
         <ul>
         <li>Use short equivalents for images, such as icons, buttons, and graphics</li>
@@ -90,7 +90,7 @@ const Perceivable = () => {
 
 
         <div className="text_alternative_list">
-        <h5>Text alternatives </h5>
+        <h5 id="perceive_text_alts">Text alternatives </h5>
         <p>You can include a short text alternative to briefly describe what it is. For some content, like videos, animations, and graphs, longer alt text can be additionally provided to describe it fully. Things to think about including in your text alt:</p>
         <ul>
             <li>Why is the content there/what is its purpose</li>
@@ -110,7 +110,7 @@ const Perceivable = () => {
 
 
         <div className="disting_list">
-        <h5> Distinguishability </h5>
+        <h5 id="perceive_distinguish"> Distinguishability </h5>
        <p> In a nutshell: This means making it as easy as possible for users to see and hear the content. </p>
        <ul>
         <li> Do not use color as the only way of identifying or differentiating content</li>

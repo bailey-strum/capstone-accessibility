@@ -1,7 +1,3 @@
-import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
-import {useState} from "react";
-import { Link } from "react-router-dom";
-import {Navigate} from "react-router-dom";
 import Header from "../../Components/Header";
 import "./pour.css";
 
@@ -12,7 +8,7 @@ const Understandable = () => {
         <body>
 
     <div className="readability_paragraph">
-    <h6> Readability </h6>
+    <h6 id="understandable_intro"> Readability </h6>
     <p>When authoring the content of your web pages, you must ensure that text is readable and understandable by as broad an audience as possible. This should also be implemented for use with assistive technologies. </p>
 
 <p> Decoding the text: </p>
@@ -25,7 +21,7 @@ const Understandable = () => {
 </div>
 
 <div className="improve_readability_paragraph">
-<p>Improving your website’s readability: </p>
+<p id = "understandable_readability">Improving your website’s readability: </p>
 <ul>
     <li>Provide a mechanism to find definitions for unusual words, phrases and/or abbreviations (examples: link to definitions, glossary, inline definitions, description lists, search functions) </li>
     <li>Lessen the amount of mental energy spent decoding by using common and familiar words and avoiding long, run-on sentences </li>
@@ -98,7 +94,7 @@ const Understandable = () => {
 </div>
 
 <div className="input_assist_paragraph">
-<h6> Input Assistance </h6>
+<h6 id = "understandable_input_assistance"> Input Assistance </h6>
 <p>Make sure users understand the functionality as best you can to help prevent mistakes due to users not understanding or recognizing interaction rules. Implement reminders and cues on how to best interact with the system and provide methods for users to easily correct mistakes when they do make them.</p>
 
 <ul>
@@ -115,7 +111,6 @@ const Understandable = () => {
 
 </div>
 
-
 <div className="important_note_paragraph">
 <h6>Remember that too much information can be just as bad as too little. </h6>
 
@@ -125,10 +120,7 @@ const Understandable = () => {
 <li><a href = "https://www.w3.org/WAI/WCAG21/quickref/#principle3" > WCAG: Principle 3 </a> </li>
 </ul>
 </div>
-        
-
-
-
+      
         </body>
         </html>
     )

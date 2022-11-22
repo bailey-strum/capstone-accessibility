@@ -25,21 +25,21 @@ const Catalog = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/" > Introduction to Accessibility </a>
+                                        <a href = "https://en.wikipedia.org/wiki/Accessibility" > Introduction to Accessibility </a>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+                                        <span data-feather="file" className="align-text-bottom"></span>
+                                        <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/" > Introduction to Web Accessibility </a>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                      <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/#what" > What is Accessibility </a>                                 
+                                      <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/#what" > Accessibility fundamentals </a>                                 
                                     </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <span data-feather="users" className="align-text-bottom"></span>
-                                        Web Accessibility guidelines
-                                    </a>
-                                </li>      
+                                </li>    
                             </ul>
                         </Grid>
 
@@ -51,21 +51,33 @@ const Catalog = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        What is accessibility
+                                        <a href = "/Perceivable/#perceive_intro" > What is Perceivable </a>
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                        Fundamentals of accesibility                                    
+                                        <a href = "/Perceivable/#perceive_text_option" > Perceivable text options </a>                                    
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="users" className="align-text-bottom"></span>
-                                        Web Accessibility guidelines
+                                        <a href = "/Perceivable/#perceive_nontext_options" > Perceivable non-text options </a>                                    
                                     </a>
-                                </li>      
+                                </li>     
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+                                        <span data-feather="users" className="align-text-bottom"></span>
+                                        <a href = "/Perceivable/#perceive_text_alts" > Perceivable text alternatives </a>                                    
+                                    </a>
+                                </li>   
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+                                        <span data-feather="users" className="align-text-bottom"></span>
+                                        <a href = "/Perceivable/#perceive_distinguish" > Making text more distinguishable </a>                                    
+                                    </a>
+                                </li>   
                             </ul>
                         </Grid>
 
@@ -77,19 +89,19 @@ const Catalog = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        What is accessibility
+                                        <a href = "/Operable/#operable_intro" > What is Operable </a>                                    
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                        Fundamentals of accesibility                                    
+                                        <a href = "/Operable/#operable_standardIO" > Standard input/output </a>                                                                       
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="users" className="align-text-bottom"></span>
-                                        Web Accessibility guidelines
+                                        <a href = "/Operable/#operable_nagivation" > Helpful website navigation steps </a>                                                                      
                                     </a>
                                 </li>      
                             </ul>
@@ -103,19 +115,19 @@ const Catalog = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        What is accessibility
+                                        <a href = "/Understandable/#understandable_intro" > What is Understandable </a>                                                                     
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                        Fundamentals of accesibility                                    
+                                        <a href = "/Understandable/#understandable_readability" > Improve readability </a>                                                                                                       
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="users" className="align-text-bottom"></span>
-                                        Web Accessibility guidelines
+                                        <a href = "/Understandable/#understandable_input_assistance" > Input Assistance </a>                                                                                                      
                                     </a>
                                 </li>      
                             </ul>
@@ -129,21 +141,15 @@ const Catalog = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file" className="align-text-bottom"></span>
-                                        What is accessibility
+                                        <a href = "/Robust/#robust_intro" > What is Robust </a>                                                                                                     
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart" className="align-text-bottom"></span>
-                                        Fundamentals of accesibility                                    
+                                        <a href = "/Robust/#robust_list_of_tech" > Lists of "most used" tech   </a>                                                                                                                                      
                                     </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <span data-feather="users" className="align-text-bottom"></span>
-                                        Web Accessibility guidelines
-                                    </a>
-                                </li>      
+                                </li>   
                             </ul>
                         </Grid>
                        

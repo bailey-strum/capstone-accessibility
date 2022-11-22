@@ -12,7 +12,7 @@ const Robust = () => {
         <body>
 
         <div className="robust_intial_paragraph">
-        Users will be using many different kinds of web-browsers, and good quality web content will be accessible by as many web browsers as possible, if wide reach is the desired goal. These different web browsers will have different tools, extensions, etc which will all be implemented differently. 
+        <p id="robust_intro">Users will be using many different kinds of web-browsers, and good quality web content will be accessible by as many web browsers as possible, if wide reach is the desired goal. These different web browsers will have different tools, extensions, etc which will all be implemented differently. </p>
         </div>
 
     <div className="robust_introduction_paragraph">   
@@ -22,7 +22,7 @@ const Robust = () => {
     </div>
 
 <div className="browsers_list">
-    <p>The most popular web browsers are (according to Oberlo.com as of 2022) </p>
+    <p id="robust_list_of_tech">The most popular web browsers are (according to Oberlo.com as of 2022) </p>
 <ol type="1">
     <li>Google Chrome </li>
     <li>Apple’s Safari </li>
