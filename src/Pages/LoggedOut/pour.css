@@ -90,6 +90,7 @@
 }
 
 .io_methods{
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -120,7 +121,22 @@
     background-color: rgb(83, 83, 83);
 }
 
+.intro_box_understandable{
+    display:flexbox;
+    align-items: center;
+    left: 50px;
+    bottom: 25px;
+    padding:30px;
+    top: 0px;
+    font-size: 16px;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(255, 242, 244);
+    width: 1000px;
+}
+
 .readability_paragraph{
+    margin-top: 10px;
     padding: 10px;
 }
 

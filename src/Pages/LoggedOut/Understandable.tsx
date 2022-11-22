@@ -7,6 +7,13 @@ const Understandable = () => {
         <Header/>
         <body>
     <div className="topic_understandable">Understandable</div>
+
+    <div className="intro_box_understandable">
+        <p>Text content must be easy to read for humans and able to be processed by assistive technology. Navigation should be implemented in a way that users can quickly and intuitively pick it up.</p>
+        <p><u>Readability</u>: Written content should be easily understood by the broadest audience possible</p>
+        <p><u>Predictability</u>: UI should appear predictable, consistent, and non-distracting.</p>
+        </div>
+
     <div className="readability_paragraph">
     <h5 id="understandable_intro"> Readability </h5>
     <p>When authoring the content of your web pages, you must ensure that text is readable and understandable by as broad an audience as possible. This should also be implemented for use with assistive technologies. </p>
