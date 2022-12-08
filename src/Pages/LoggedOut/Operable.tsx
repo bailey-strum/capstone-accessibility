@@ -9,9 +9,9 @@ import "./pour.css";
 const Operable = () => {
 
     return (
-        <html>
+        <>
         <Header/>
-        <body>
+        <main>
         <div className="topic_operable">Operable</div>
         <div className="first_paragraph">
         <p id="operable_intro">Functionality available from keyboard - the keyboard should be the baseline of expected input rather than keyboard and mouse. This means that a standard keyboard should be able to seamlessly navigate and operate the functionality of a website. </p>
@@ -100,8 +100,7 @@ const Operable = () => {
 
 </div>
 
-        </body>
-        </html>
+        </main> </>
     )
 }
 
