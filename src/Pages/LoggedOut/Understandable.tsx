@@ -3,9 +3,9 @@ import "./pour.css";
 
 const Understandable = () => {
     return (
-        <html>
+        <>
         <Header/>
-        <body>
+        <main>
     <div className="topic_understandable">Understandable</div>
 
     <div className="intro_box_understandable">
@@ -128,8 +128,8 @@ const Understandable = () => {
 </ul>
 </div>
       
-        </body>
-        </html>
+        </main>
+        </>
     )
 }
 
